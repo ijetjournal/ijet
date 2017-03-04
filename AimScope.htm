@@ -191,7 +191,7 @@
 				</script>-->
 
 
-    <a href="http://www.ijetjournal.org/CallForPaper.htm" title="IJET Call For Paper"><font face="arial" font size="4" color="red" ><u><strong>Call for Paper - February 2017 </strong></u><a/></font>
+    <a href="http://www.ijetjournal.org/CallForPaper.htm" title="IJET Call For Paper"><font face="arial" font size="4" color="red" ><u><strong><span class="monthDemo"></span> </strong></u><a/></font>
 <br><br><center><strong><u><a href="http://www.researcherid.com/rid/M-1365-2016" target="_blank"><font face="arial" font size="3" color="red" >Thomson Reuters ResearcherID:<font face="arial" font size="3" color="00000" > M-1365-2016 </a></u></strong></font><img src="http://www.ijctjournal.org/images/newbut.gif" alt="ijct"> <strong><u><a href="http://www.cosmosimpactfactor.com/page/journals_details/646.html" target="_blank"><font face="arial" font size="3" color="0000" >Cosmos Impact Factor:<font face="arial" font size="3" color="red" > 3.546 </a></u></strong></font><img src="http://www.ijctjournal.org/images/newbut.gif" alt="ijct"></center><br><strong><u><a href="http://oaji.net/journal-detail.html?number=1992" target="_blank"><font face="arial" font size="3" color="0000" >OAJI Impact Factor:<font face="arial" font size="3" color="red" > 0.101 </a></u></strong></font><img src="http://www.ijctjournal.org/images/newbut.gif" alt="ijct"></center>
 
 
@@ -320,5 +320,56 @@
 	<a href="http://www.scribd.com/InternationalResearchGroup" title="ijet-Scribd" target="_blank">
 	<img src="http://www.ijetjournal.org/images/ijet_Scribd.jpg" alt="ijet" width="160" height="80" style="border: 0pt none; "/><br /></a>    <br />-->
 </div>-->
+<script type="text/javascript">
+function myFunction() {
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+    var date = new Date(), y = date.getFullYear(), m = date.getMonth();
+    var firstDay = new Date(y, m, 1);
+    var lastDay = new Date(y, m + 1, 0);
+    //alert(lastDay.getDate());
+
+    var d = new Date();
+    //var mon = month[d.getMonth()];
+    var year=d.getFullYear();
+    var monthClass=document.getElementsByClassName("monthDemo");
+    for(var i = 0, length = monthClass.length; i < length; i++) {
+      monthClass[i].innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year;
+     }
+
+    var dateClass=document.getElementsByClassName("dateDemo");
+    for(var j = 0, length1 = dateClass.length; j < length1; j++) {
+    	dateClass[j].innerHTML = lastDay.getDate() + " - " + month[d.getMonth()]+" "+year;
+    	//alert(lastDay.getDate() + " th " + month[d.getMonth()]+" "+year)
+     }
+    
+    var yearClass=document.getElementsByClassName("yearClass");
+    for(var j = 0, length1 = yearClass.length; j < length1; j++) {
+    	yearClass[j].innerHTML = month[d.getMonth()]+"  -  "+year;
+    	//alert(lastDay.getDate() + " th " + month[d.getMonth()]+" "+year)
+     }
+
+
+
+
+    /* document.getElementsByClassName("monthDemo").innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year; */
+}
+
+window.onload = function() {
+  myFunction();
+};
+
+</script>
 </body>
 </html>
