@@ -28,9 +28,84 @@ Journal, Management Journal, Engineering Journal, International Journal, enginee
 <meta name="description" content="ijet Best Electronic Journal, e-Journal"/>
 
 <link rel="stylesheet" href="http://www.ijetjournal.org/style.css" type="text/css" media="screen" />
-
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+-->
 
+.social {
+  position: fixed;
+  width: 10%;
+  top: 50%;
+  text-align: center;
+  float:right;
+  transform: translateY(-50%);
+}
+
+.social .link {
+	float:right;
+  display: inline-block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px dashed #ECAC0E;
+  background-clip: content-box;
+  padding: 5px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-shadow:
+    0 -1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 0 rgba(255, 255, 255, 0.2);
+  font-size: 15px;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
+}
+
+.social .link.google-plus {
+  background-color: tomato;
+  color: white;
+}
+
+.social .link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
+
+.social .link.facebook {
+  background-color: #3B5998;
+  color: white;
+}
+</style>
+
+
+<div class="social">
+  <a href="https://www.facebook.com/IJETJournals" class="link facebook" target="blank"><span class="fa fa-facebook-square"></span></a>
+  <a href="https://www.linkedin.com/in/international-research-group-346501135/" class="link google-plus" target="blank"><span class="fa fa-linkedin-square"></span></a>
+  <a href="https://twitter.com/IRGJournals" class="link twitter" target="blank"><span class="fa fa-twitter"></span></a>
+</div>
 <div id="header">
 <div id="container">
 <img src="http://www.ijctjournal.org/images/emailid.png" width="40" height="30" align="middle" alt="ijct" /><font size="2" font color="#8A0808"> <strong>editorIJETjournal@gmail.com</strong></font>
@@ -38,31 +113,24 @@ Journal, Management Journal, Engineering Journal, International Journal, enginee
 
 	<div id="content">
 <img src="http://www.ijetjournal.org/images/title_good1.jpg" width="940" height="200" align="middle" alt="IJET" /><br/>
-      <div >
 
-      <ul id="css3menu1" class="topmenu">
-        <li class="topfirst"><a href="http://www.ijetjournal.org/Home.htm" style="width:70px;height:8px;line-height:9px; text-align:center;">Home</a></li>
-        <li class="topmenu"><a href="http://ijetjournal.org/Topics.htm" style="width:90px;height:8px;line-height:9px; text-align:center;">Topics</a>
-
-
-        </li>
-        <li class="topmenu"><a href="http://ijetjournal.org/CallForPaper.htm" style="width:85px;height:8px;line-height:9px; text-align:center;">Call For Paper</a> </li>
-
-        <li class="topmenu"><a href="http://ijetjournal.org/PublicationCharges.htm" style="width:115px;height:8px;line-height:9px; text-align:center;">Publication Charges</a></li>
-        <li class="topmenu"><a  style="width:85px;height:8px;line-height:9px; text-align:center;">Archives</a>
-          <ul>
-            <li><a href="http://ijetjournal.org/CurrentIssues.htm" style="width:100px;height:8px;line-height:9px; text-align:left;">Current Issue</a>
-            </li>
-
-            <li><a href="http://ijetjournal.org/Archives.htm" style="width:100px;height:8px;line-height:9px; text-align:left;">Past Issues</a>
-            </li>
-                      </ul>
-        </li>
-        <li class="topmenu"><a href="http://www.ijetjournal.org/submit.html" style="width:120px;height:8px;line-height:9px; text-align:center; target="blank">online Submission</a></li>
-        <li class="toplast"><a href="http://www.irgjournals.org/" target="balnk" style="width:85px;height:8px;line-height:9px; text-align:center;">IRG Journals</a></li>
-        <li class="toplast"><a href="http://ijetjournal.org/ContactUs.htm" style="width:85px;height:8px;line-height:9px; text-align:center;">Contact Us</a></li>
-      </ul>
-    </div><br>
+<div >
+<ul id="css3menu1" class="topmenu">
+<li class="topfirst"><a href="http://www.ijetjournal.org/Home.htm" style="width:70px;height:8px;line-height:9px; text-align:center;">Home</a></li>
+<li class="topmenu"><a href="http://ijetjournal.org/Topics.htm" style="width:90px;height:8px;line-height:9px; text-align:center;">Topics</a></li>
+<li class="topmenu"><a href="http://ijetjournal.org/CallForPaper.htm" style="width:85px;height:8px;line-height:9px; text-align:center;">Call For Paper</a> </li>
+<li class="topmenu"><a href="http://ijetjournal.org/PublicationCharges.htm" style="width:115px;height:8px;line-height:9px; text-align:center;">Publication Charges</a></li>
+<li class="topmenu"><a  style="width:85px;height:8px;line-height:9px; text-align:center;">Archives</a>
+<ul>
+<li><a href="http://ijetjournal.org/CurrentIssues.htm" style="width:100px;height:8px;line-height:9px; text-align:left;">Current Issue</a></li>
+<li><a href="http://ijetjournal.org/Archives.htm" style="width:100px;height:8px;line-height:9px; text-align:left;">Past Issues</a></li>
+</ul>
+</li>
+<li class="topmenu"><a href="http://www.ijetjournal.org/Indexing.htm" style="width:80px;height:8px;line-height:9px; text-align:center;">Indexing</a></li>
+<li class="toplast"><a href="http://www.irgjournals.org/" target="balnk" style="width:85px;height:8px;line-height:9px; text-align:center;">IRG Journals</a></li>
+<li class="toplast"><a href="http://ijetjournal.org/ContactUs.htm" style="width:85px;height:8px;line-height:9px; text-align:center;">Contact Us</a></li>
+</ul>
+</div><br>
 
 
 <center><strong><u><a href="http://www.ijetjournal.org/CallForPaper.htm"><font face="arial" font size="3" color="red" > <span class="monthDemo"></span></a></u></strong></font><img src="http://www.ijctjournal.org/images/newbut.gif" alt="ijct"></center>
@@ -847,13 +915,10 @@ Faculty of Engineering,<br> Cairo University, Giza, Egypt.</p></td>
 <h2><font face="arial" color=""><strong><align="center">IJET Management</strong></font></h2>
 <div class="pages">
   <ul>
-<li class="page_item page-item-2"><a href="http://www.ijetjournal.org/home.htm" title="IJET Home"><strong>Home</strong></a></li>
-<li class="page_item page-item-2"><a href="http://www.ijctjournal.org/Archives.htm" title="IJET Archives"><strong>Archives</strong></a></li>
+<li class="page_item page-item-2"><a href="http://www.ijetjournal.org/Archives.htm" title="IJET Archives"><strong>Archives</strong></a></li>
 <li class="page_item page-item-2"><a href="http://www.ijetjournal.org/AimScope.htm" title="IJET Aim &lt; Scope"><strong>Aim &amp; Scope</strong></a></li>
-<li class="page_item page-item-2"><a href="http://www.ijetjournal.org/Indexing.htm" title="IJET Indexing"><strong>Indexing</strong></a></li>
 <li class="page_item page-item-2"><a href="http://www.ijetjournal.org/AuthorInstruction.htm" title="IJET Author Instruction"><strong>Author instruction</strong></a></li>
-<li class="page_item page-item-2"><a href="http://www.ijetjournal.org/CallForPaper.htm" title="IJET Call For Paper"><strong>Call for paper</strong>
-<img src="http://www.ijetjournal.org/images/newbut.gif" alt="IJET JOURNAL" /></a></li>
+<li class="page_item page-item-2"><a href="http://www.ijetjournal.org/CallForPaper.htm" title="IJET Call For Paper"><strong>Call for paper</strong></a></li>
 <li class="page_item page-item-2"><a href="http://www.ijetjournal.org/CurrentIssues.htm" title="IJET Current Issues"><strong>Current Issues</strong></a></li>
 <li class="page_item page-item-2"><a href="http://www.ijetjournal.org/SpecialIssues.htm" title="IJET special issue"><strong>special issue</strong></a></li>
 <li class="page_item page-item-2"><a href="http://www.ijetjournal.org/ReviewProcess.htm" title="IJET Review process"><strong>Review process</strong></a></li>
@@ -864,6 +929,7 @@ Faculty of Engineering,<br> Cairo University, Giza, Egypt.</p></td>
 <li class="page_item page-item-2"><a href="http://www.ijetjournal.org/CopyrightInfri.htm" title="IJET Copyright Infringement "><strong>Copyright infringement </strong></a></li>
 <li class="page_item page-item-2"><a href="http://www.ijetjournal.org/JoinReviewer.htm" title="IJET Join as a Reviewer"><strong>Join as a Reviewer</strong></a></li>
 <li class="page_item page-item-2"><a href="http://www.ijetjournal.org/Faq.htm" title="IJET Faq"><strong>Faq</strong></a></li>
+
 
 <h2><font face="arial" color=""><strong><center>Downloads</strong></font></center></h2>
 <li class="page_item page-item-2"><a href="http://www.ijetjournal.org/images/IJET-CopyrightForm.docx" title="COPY RIGHTS FROM"><strong>CopyrightForm</strong></a></li>
@@ -884,21 +950,6 @@ Faculty of Engineering,<br> Cairo University, Giza, Egypt.</p></td>
 </div>
 
 <div class="toplink" align="center"><a href="#"> <img src="http://www.ijetjournal.org/images/uppage.gif" title="Go Top" width="50" height="20" /></a><br><strong><font face="arial" font  color="black" size ="1">Go Top</font></strong></div>
-
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
-
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<nav class="social">
-          <ul>
-<li><a href="https://twitter.com/IRGJournals" target="blank">Twitter <i class="fa fa-twitter"></i></a></li>
-
-<li><a href="https://www.facebook.com/IJETJournals" target="blank">Facebook <i class="fa fa-facebook"></i></a></li>
-
-<li><a href="https://www.linkedin.com/in/international-research-group-346501135/" target="blank">linkedin<i class="fa fa-dribbble"></i></a></li>
-
-          </ul>
-      </nav>
-
 
 <div id="footer" style="text-align:center">
 
