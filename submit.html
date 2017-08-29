@@ -29,8 +29,85 @@ Journal, Management Journal, Engineering Journal, International Journal, enginee
 	<meta name="description" content="ijet Contact Us, Best Indian Journal"/>
 
 	<link rel="stylesheet" href="http://www.ijetjournal.org/style.css" type="text/css" media="screen" />
-
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+-->
+
+.social {
+  position: fixed;
+  width: 10%;
+  top: 50%;
+  text-align: center;
+  float:right;
+  transform: translateY(-50%);
+}
+
+.social .link {
+	float:right;
+  display: inline-block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px dashed #ECAC0E;
+  background-clip: content-box;
+  padding: 5px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-shadow:
+    0 -1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 0 rgba(255, 255, 255, 0.2);
+  font-size: 15px;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
+}
+
+.social .link.google-plus {
+  background-color: tomato;
+  color: white;
+}
+
+.social .link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
+
+.social .link.facebook {
+  background-color: #3B5998;
+  color: white;
+}
+</style>
+
+
+<div class="social">
+  <a href="https://www.facebook.com/IJETJournals" class="link facebook" target="blank"><span class="fa fa-facebook-square"></span></a>
+  <a href="https://www.linkedin.com/in/international-research-group-346501135/" class="link google-plus" target="blank"><span class="fa fa-linkedin-square"></span></a>
+  <a href="https://twitter.com/IRGJournals" class="link twitter" target="blank"><span class="fa fa-twitter"></span></a>
+</div>
 
 	<div id="header">
 	<div id="container">
@@ -165,29 +242,6 @@ Journal, Management Journal, Engineering Journal, International Journal, enginee
 
 	<div class="toplink" align="center"><a href="#"> <img src="http://www.ijetjournal.org/images/uppage.gif" title="Go Top" width="50" height="20" /></a><br><strong><font face="arial" font  color="black" size ="1">Go Top</font></strong></div>
 
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
-
-	  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<nav class="social">
-	          <ul>
-<li><a href="https://twitter.com/IRGJournals" target="blank">Twitter <i class="fa fa-twitter"></i></a></li>
-
-<li><a href="https://www.facebook.com/IJETJournals" target="blank">Facebook <i class="fa fa-facebook"></i></a></li>
-
-<li><a href="https://www.linkedin.com/in/international-research-group-346501135/" target="blank">linkedin<i class="fa fa-dribbble"></i></a></li>
-
-	          </ul>
-	      </nav>
-
-	<!--<script type="text/javascript">stLight.options({publisher: "dd26d9f9-8fac-4800-b69f-2bff4ff9bd2e", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-	<script>
-	var options={ "publisher": "dd26d9f9-8fac-4800-b69f-2bff4ff9bd2e", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin", "pinterest", "email", "sharethis"]}};
-	var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
-	</script>-->
-
-	<div id="footer" style="text-align:center">
-
-
 	<div id="footer" style="text-align:center">
 
 	<font size="1" color="yellow">Copyright &copy; 2015 <a href="http://www.ijetjournal.org" target="blank"><font size="1" color="white">IJET- International Journal of Engineering and Techniques</font></a> Published By <a href="http://www.irgjournals.org" target="blank"><font size="1" color="white" target="blank">International Research Group</font></a>, All rights reserved </font><br/>
@@ -198,10 +252,7 @@ Journal, Management Journal, Engineering Journal, International Journal, enginee
 
 	</div>
 	</SOURCE>
-	<!--<div style="position: fixed; opacity: 1; right: 10px; bottom: 10px;" id="mysitelogo">
-	        <a href="http://www.ijetjournal.org/CallForPaper.htm" title="CALL FOR PAPER ijet">
-	            <img src="http://www.irgjournals.org/images/call-for-paper.jpg" alt="ijet" width="160" height="165" style="border: 0pt none; width: 160px; height: 165px;"></a>
-	    </div>-->
+
 	    <script type="text/javascript">
 	function myFunction() {
 	    var month = new Array();
